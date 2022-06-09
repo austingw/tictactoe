@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sun Vs. Moon Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="content">
+        <div id="gameboard">
+            <div class="square" data-square></div>
+            <div class="square" data-square></div>
+            <div class="square" data-square></div>
+            <div class="square" data-square></div>
+            <div class="square" data-square></div>
+            <div class="square" data-square></div>
+            <div class="square" data-square></div>
+            <div class="square" data-square></div>
+            <div class="square" data-square></div>
+        </div>
+        <div id="winningMessage">
+
+        </div>
+        <button id="restartButton">
+            Restart
+        </button>
+    </div>
+    <div class="teamInput">
+        <div id="teamSun">
+            <h3>Choose your team:</h3>
+            <img src="/sun.svg" alt="sun">
+            Team Sun
+            <form action="" id="player1">
+                <input type="text" name="sunName" id="sunName" placeholder="Player 1">
+            </form>
+        </div>
+        <div id="teamMoon">
+            <img src="/moon.svg" alt="moon">
+            Team Moon
+            <form action="" id="player2">
+                <input type="text" name="sunName" id="sunName" placeholder="Player 2">
+            </form>
+        </div>
+    </div>
+</body>
+<script src="app.js"></script>
+</html>

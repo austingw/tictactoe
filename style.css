@@ -1,0 +1,75 @@
+:root {
+    --main-color: rgb(170, 73, 170);
+    --main-backgroundColor: rgb(43, 41, 41);
+    --secondary-color: rgb(209, 209, 209);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#content {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#gameboard {
+    height: 500px;
+    width: 500px;
+    display: grid;
+    justify-content: center;
+    
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 2px;
+}
+
+.square {
+    border: 3px solid black;
+    text-align: center;
+    cursor: pointer;
+}
+
+.square.x {
+    cursor: not-allowed;
+    background-image: url(/sun.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90%;
+}
+
+.square.o {
+    cursor: not-allowed;
+    background-image: url(/moon.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80%;
+}
+
+img {
+    border: 1px solid black;
+    border-radius: 100px;
+    padding: 5px;
+    width: 150px;
+  }
+
+.teamInput {
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    
+
+}
+
+#teamSun,#teamMoon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
